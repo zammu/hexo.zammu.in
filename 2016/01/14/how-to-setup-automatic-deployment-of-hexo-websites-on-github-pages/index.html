@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to setup Automatic Deployment of Hexo websites on Github Pages | Hexo on Zammu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Hexo is a really powerful and fast static site generator. However, setting up Automatic Deployments for it is painful and tedious.
+In this short post I’ll show you how to get your Hexo website built o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to setup Automatic Deployment of Hexo websites on Github Pages">
+<meta property="og:url" content="http://hexo.zammu.in/2016/01/14/how-to-setup-automatic-deployment-of-hexo-websites-on-github-pages/index.html">
+<meta property="og:site_name" content="Hexo on Zammu">
+<meta property="og:description" content="Hexo is a really powerful and fast static site generator. However, setting up Automatic Deployments for it is painful and tedious.
+In this short post I’ll show you how to get your Hexo website built o">
+<meta property="og:updated_time" content="2016-01-14T08:13:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to setup Automatic Deployment of Hexo websites on Github Pages">
+<meta name="twitter:description" content="Hexo is a really powerful and fast static site generator. However, setting up Automatic Deployments for it is painful and tedious.
+In this short post I’ll show you how to get your Hexo website built o">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo on Zammu" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo on Zammu</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://hexo.zammu.in"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-how-to-setup-automatic-deployment-of-hexo-websites-on-github-pages" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/01/14/how-to-setup-automatic-deployment-of-hexo-websites-on-github-pages/" class="article-date">
+  <time datetime="2016-01-14T13:20:00.000Z" itemprop="datePublished">2016-01-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      How to setup Automatic Deployment of Hexo websites on Github Pages
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><link rel="stylesheet" type="text/css" href="/overrides.css"></p>
+<p><link rel="stylesheet" type="text/css" href="/asciinema-player.css"></p>
+<script src="/asciinema-player.js"></script>
+
+<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> is a really powerful and fast static site generator. However, setting up Automatic Deployments for it is painful and tedious.</p>
+<p>In this short post I’ll show you how to get your Hexo website built on Github Pages automatically for each git push using <a href="https://zammu.in" target="_blank" rel="external">Zammu</a>.</p>
+<ol>
+<li>Sign up for <a href="https://zammu.in/hexo?invitation_code=HEXOAWESOME" target="_blank" rel="external">zammu.in</a> using the invitation code <code>HEXOAWESOME</code>.</li>
+<li>Link up your Github Profile from zammu.in’s home page after signing in.</li>
+<li>Create a new site using the “Github =&gt; Hexo =&gt; Github” recipe and enter the github url of your hexo website e.g. <em>zammu/hexo.zammu.in</em> with the other details.</li>
+<li>That’s it. Now you whenever you push to your github repository, your website will be built using Hexo and will be published to Github Pages on subdomain.zammu.in</li>
+</ol>
+<p>P.S I am the founder of <a href="https://zammu.in/hexo?invitation_code=HEXOAWESOME" target="_blank" rel="external">zammu</a> and would love to hear your feedback on it at <a href="https://zammu.in/feedback?utm_src=hexo.zammu.in" target="_blank" rel="external">https://zammu.in/feedback</a></p>
+<p>P.P.S This website is also hosted on <a href="https://zammu.in/hexo" target="_blank" rel="external">zammu</a>. You can checkout its source at <a href="https://github.com/zammu/hexo.zammu.in" target="_blank" rel="external">https://github.com/zammu/hexo.zammu.in</a></p>
+<p><div id="player-container"></div></p>
+<script src="/load-player.js"></script>
+
+<hr>
+<p><strong>Here are the commands used in the above screencast if you want to copy them</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># init the new site</span></span><br><span class="line">hexo init awesome-hexo-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># init the repo</span></span><br><span class="line"><span class="built_in">cd</span> awesome-hexo-blog</span><br><span class="line">git init</span><br><span class="line">git commit -m <span class="string">'init'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># now we need to go to github and create our repository and then</span></span><br><span class="line">git remote add origin git@github.com:minhajuddin/awesome-hexo-blog</span><br><span class="line">git push origin master -u</span><br><span class="line"></span><br><span class="line"><span class="comment"># now we need to go to https://zammu.in/hexo and create a new site with the following  info</span></span><br><span class="line"><span class="comment"># Recipe = Github =&gt; Hexo =&gt; Github</span></span><br><span class="line"><span class="comment"># Title = My awesome Blog</span></span><br><span class="line"><span class="comment"># Domain =</span></span><br><span class="line"><span class="comment"># Subdomain = awesomehexo</span></span><br><span class="line"><span class="comment"># Github URL = minhajuddin/awesome-hexo-blog</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"That's it we are done"</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://hexo.zammu.in/2016/01/14/how-to-setup-automatic-deployment-of-hexo-websites-on-github-pages/" data-id="cijdzdzyc000615lq3qdejv4b" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/automatic-deployment/">automatic-deployment</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github-pages/">github-pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zammu/">zammu</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/01/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/automatic-deployment/">automatic-deployment</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-pages/">github-pages</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zammu/">zammu</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/automatic-deployment/" style="font-size: 10px;">automatic-deployment</a> <a href="/tags/github-pages/" style="font-size: 10px;">github-pages</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/zammu/" style="font-size: 20px;">zammu</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/01/14/how-to-setup-automatic-deployment-of-hexo-websites-on-github-pages/">How to setup Automatic Deployment of Hexo websites on Github Pages</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/14/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Khaja Minhajuddin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
