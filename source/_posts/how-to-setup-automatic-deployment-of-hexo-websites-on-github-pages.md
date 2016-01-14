@@ -8,9 +8,8 @@ tags:
 ---
 
 
-<link rel="stylesheet" type="text/css" href="/overrides.css" />
-<link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
-<script src="/asciinema-player.js"></script>
+<link rel="stylesheet" type="text/css" href="http://hugo.zammu.in/asciinema-player.css" />
+<script src="http://hugo.zammu.in/asciinema-player.js"></script>
 
 [Hexo](https://hexo.io/) is a really powerful and fast static site generator. However, setting up Automatic Deployments for it is painful and tedious.
 
@@ -26,7 +25,7 @@ P.S I am the founder of [zammu](https://zammu.in/hexo?invitation_code=HEXOAWESOM
 P.P.S This website is also hosted on [zammu](https://zammu.in/hexo). You can checkout its source at https://github.com/zammu/hexo.zammu.in
 
 <div id="player-container"></div>
-<script src='/load-player.js'></script>
+<script src='/asciicinema/load-player.js'></script>
 
 - - -
 
